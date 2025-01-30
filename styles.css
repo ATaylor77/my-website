@@ -1,0 +1,20 @@
+p {
+    color: rgb(133, 9, 9);
+}
+
+#copyright {
+    font-size: .75em ;
+}
+
+main ul {
+    font-size: .80em;
+    color: rgb(75, 13, 102);
+}
+
+h1, h2 {
+    color: rgba(22, 32, 3, 0.507);
+}
+
+:first-child main {
+    font-size: 1.2em;
+}
