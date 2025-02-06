@@ -3,7 +3,7 @@ p {
 }
 
 #copyright {
-    font-size: .75em ;
+    font-size: .75em;
 }
 
 main ul {
@@ -11,10 +11,47 @@ main ul {
     color: rgb(75, 13, 102);
 }
 
-h1, h2 {
+h1,
+h2 {
     color: rgba(22, 32, 3, 0.507);
 }
 
 :first-child main {
     font-size: 1.2em;
+}
+
+#work {
+    font-size: 115%;
+    color: rgb(75, 13, 102);
+}
+
+/* Used a class selector here instead of four ID selectors of the same code*/
+.box {
+    float: left;
+    width: 450px;
+    height: 250px;
+    border: 4px solid rgb(0, 0, 0);
+    margin: 2em;
+    padding: 1em;
+}
+
+img {
+    float: right;
+    border: 4px solid rgb(0, 0, 0);
+}
+
+footer {
+    clear: both;
+}
+
+article {
+    margin: 2em;
+    padding: 1em;
+    column-count: 4;
+    column-gap: 35px;
+    column-rule: 3px dotted rgb(0, 0, 0);
+}
+
+#article {
+    background: rgb(169, 169, 169) url("images/snowyf.jpg") top left;
 }
