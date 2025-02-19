@@ -1,18 +1,17 @@
 /* Nav Menu */
 #nav_menu {
-    padding-bottom: 2em;
     margin: auto;
-    width: 100%;
 }
 
 #nav_menu ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 #nav_menu ul li {
-    float: left;
-    width: 25%;
+  flex-basis: 25%;
 }
 
 #nav_menu ul li a {
@@ -34,68 +33,16 @@
     background-color: rgb(58, 3, 3);
 }
 
-/*Main text formatting*/
 
+/*Main text formatting*/
 h1, h2, h3 {
     color: rgb(153, 8, 8);
     margin-top: 1em;
 }
 
-p {
-    width: 50%;
-}
-
 /*img formatting*/
-
 img {
     border: 2px solid rgb(0, 0, 0);
-}
-
-#index-img {
-    width: 25%;
-    margin-top: 1em;
-    margin-right: 2em;
-}
-
-#index2-img {
-    float: right;
-    width: 20%;
-    margin-top: 1em;
-    margin-right: 2em;
-}
-
-#work-img {
-    margin-top: 1em;
-    width: 60%;
-    min-width: 30%;
-}
-
-#dnd-img {
-    width: 50%;
-    min-width: 30%;
-    float: right;
-    margin-bottom: 2em;
-}
-
-#oot-img {
-    width: 35%;
-}
-
-
-/*article specific*/
-
-#article {
-    background-image: url("../images/snowyf.jpg");
-    background-position: bottom;
-}
-
-article p, h1, p {  /*gives text a background color that is transpaant */
-    background-color: rgba(151, 151, 151, 0.904);
-    width: 40%;
-}
-
-p {
-    font-size: 110%;
 }
 
 /*footer*/
@@ -103,13 +50,11 @@ footer {
     font-size: 75%;
 }
 
-
 /* Misc. Formatting*/
 html {
     background-color: rgb(151, 151, 151);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 /*media Qs*/
 
@@ -119,10 +64,13 @@ html {
     }
 }
 
-@media only screen and (max-width: 540px) { /* flips the nav bar vertical at 540px and gives last item a border right*/
-    #nav_menu ul li {
-        float: none;
-        font-size: 95%;
+@media only screen and (max-width: 660px) { /* flips the nav bar vertical at 540px and gives last item a border right*/
+    #nav_menu ul {
+        flex-direction: column;
+    }
+
+    #nav_menu ul li a {
+        border-bottom: 2px solid rgb(0, 0, 0);
     }
 
     #nav_menu ul li a.lastitem {

@@ -1,0 +1,31 @@
+/*article specific*/
+
+#article {
+    background-image: url("../images/snowyf.jpg");
+    background-position: bottom;
+}
+
+#article-body {
+    display: flex;
+    flex-direction: column;
+}
+
+article p, h1, p {  /*gives text a background color that is transpaant */
+    background-color: rgba(151, 151, 151, 0.904);
+    width: 40%;
+}
+
+p {
+    font-size: 110%;
+}
+
+@media only screen and (max-width:786px) {   /* removes backgroung img to prevent endless images scrolling in background*/
+    #article {
+        background-image: none;
+    }
+
+    article p, h1, p {  /*removes background img and stretches text*/
+        background-color: rgba(151, 151, 151, 0.904);
+        width: 100%;
+    }
+}

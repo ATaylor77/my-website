@@ -1,0 +1,22 @@
+#index-img {
+    width: 25%;
+    margin-top: 1em;
+    margin-right: 2em;
+}
+
+#index2-img {
+    float: right;
+    width: 20%;
+    margin-top: 1em;
+    margin-right: 2em;
+}
+
+p {
+    width: 50%;
+}
+
+@media only screen and (max-width: 360px) { /* expands text to take up whole screen*/
+    p {
+        width: 100%;
+    }
+}

@@ -1,0 +1,62 @@
+img {
+    border: none;
+}
+
+p {
+font-size: 1.25em;
+}
+
+div {
+ border: solid 2px rgb(0, 0, 0);
+}
+
+h2 {
+    justify-self: center;
+}
+
+section {
+    padding-top: 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 16px;
+    grid-template-areas:
+        "cass wall anim"
+        "cass wall anim";
+}
+
+#cass {
+grid-area: cass;
+}
+
+#cass img {
+    width: 100%;
+    }
+
+#wall {
+grid-area: wall;
+}
+
+#wall img {
+    width: 100%;
+    }
+
+#anim {
+grid-area: anim;
+}
+
+#anim img {
+    width: 100%;
+    }
+
+    @media only screen and (max-width: 720px) {  
+        section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "cass cass"
+                "wall wall"
+                "anim anim";
+        }
+    }
