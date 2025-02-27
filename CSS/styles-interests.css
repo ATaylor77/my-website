@@ -1,17 +1,21 @@
 /* Img Formatting */
 #dnd-img {
-    width: 50%;
-    min-width: 30%;
-    float: right;
+    width: 40%;
+    float: none;
     margin-bottom: 2em;
 }
 
-#oot-img {
+/* #oot-img {
     width: 35%;
-}
+}  */
 
+/*text formatting */
 p {
     width: 50%;
+}
+
+figcaption {
+    font-size: 85%;
 }
 
 @media only screen and (max-width: 360px) { /* expands text to take up whole screen*/

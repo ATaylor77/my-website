@@ -10,6 +10,10 @@ p {
 }
 
 @media only screen and (max-width: 360px) { /* expands text to take up whole screen*/
+   #work-img {
+    width: 40%;
+   }
+   
     p {
         width: 100%;
     }
