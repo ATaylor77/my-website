@@ -38,6 +38,11 @@
 h1, h2, h3 {
     color: rgb(153, 8, 8);
     margin-top: 1em;
+    font-family: "Mulish", sans-serif;
+}
+
+P {
+    font-family: "Mulish", sans-serif;
 }
 
 /*img formatting*/
@@ -57,12 +62,6 @@ html {
 }
 
 /*media Qs*/
-
-@media only screen and (max-width: 829px) {   /* removes backgroung img to prevent endless images scrolling in background*/
-    #article {
-        background-image: none;
-    }
-}
 
 @media only screen and (max-width: 660px) { /* flips the nav bar vertical at 540px and gives last item a border right*/
     #nav_menu ul {

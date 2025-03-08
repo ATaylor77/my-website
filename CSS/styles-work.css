@@ -2,19 +2,34 @@
 #work-img {
     margin-top: 1em;
     width: 60%;
-    min-width: 30%;
+    min-width: 50%;
 }
 
 p {
     width: 50%;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: .2em .6em;
+    text-align: middle;
+}
+
+.left {
+    text-align: left;
+}
+
 @media only screen and (max-width: 360px) { /* expands text to take up whole screen*/
    #work-img {
-    width: 40%;
+    width: 100%;
    }
    
     p {
+        float: left;
         width: 100%;
     }
 }

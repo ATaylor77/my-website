@@ -1,16 +1,18 @@
+div {
+    display: flex;
+    flex-direction: row;
+}
+
 /* Img Formatting */
-#dnd-img {
-    width: 40%;
-    float: none;
+img {
+    width: 80%;
     margin-bottom: 2em;
 }
 
-/* #oot-img {
-    width: 35%;
-}  */
 
 /*text formatting */
 p {
+    float: none;
     width: 50%;
 }
 
@@ -19,7 +21,16 @@ figcaption {
 }
 
 @media only screen and (max-width: 360px) { /* expands text to take up whole screen*/
+    div {
+        flex-direction: column;
+    }
+    
     p {
         width: 100%;
     }
+    
+    img {
+        width: 100%;
+    }
+
 }

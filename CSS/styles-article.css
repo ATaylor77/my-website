@@ -23,11 +23,10 @@ p {  /*gives text a background color that is transpaant */
 
 article p {
     background-color: rgba(151, 151, 151, 0.904);
-    font-size: 110%;
     width: 50%;
 }
 
-@media only screen and (max-width:786px) {   /* removes backgroung img to prevent endless images scrolling in background*/
+@media only screen and (max-width:786px) {   /* removes background img to prevent endless images scrolling in background*/
     #article {
         background-image: none;
     }
