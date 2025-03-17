@@ -11,18 +11,18 @@
 }
 
 h1 {
-    background-color: rgba(151, 151, 151, 0.904);
+    background-color: rgb(207, 202, 202);
     width: 20%;
 }
 
 p {  /*gives text a background color that is transpaant */
-    background-color: rgba(151, 151, 151, 0.904);
+    background-color: rgb(207, 202, 202);
     width: 30%;
     padding: .5em;
 }
 
 article p {
-    background-color: rgba(151, 151, 151, 0.904);
+    background-color: rgb(207, 202, 202);
     width: 50%;
 }
 

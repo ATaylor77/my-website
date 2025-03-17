@@ -3,7 +3,7 @@ img {
 }
 
 div {
- border: solid 2px rgb(0, 0, 0);
+    border: solid 2px rgb(0, 0, 0);
 }
 
 h2 {
@@ -21,38 +21,48 @@ section {
         "cass wall anim";
 }
 
+p {
+    width: 70%;
+}
+
 #cass {
-grid-area: cass;
+    grid-area: cass;
 }
 
 #cass img {
     width: 100%;
-    }
+}
 
 #wall {
-grid-area: wall;
+    grid-area: wall;
 }
 
 #wall img {
     width: 100%;
-    }
+}
 
 #anim {
-grid-area: anim;
+    grid-area: anim;
 }
 
 #anim img {
     width: 100%;
-    }
+}
 
-    @media only screen and (max-width: 720px) {  
-        section {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            grid-template-areas:
-                "cass cass"
-                "wall wall"
-                "anim anim";
-        }
+@media only screen and (max-width: 720px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "cass cass"
+            "wall wall"
+            "anim anim";
     }
+}
+
+@media only screen and (max-width: 360px) {
+    main p {
+        width: 100%;
+    }
+}
